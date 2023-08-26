@@ -12,7 +12,7 @@ public class DataGenerator
             //Look for any book.
             if (context.Books.Any())
             {
-                return; //Data was already seeded
+                return; //Data was already seeded.
             }
             context.Books.AddRange(
                 new Book
