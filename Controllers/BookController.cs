@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using WebApi.BookOperations.GetBooks;
 using WebApi.DBOperations;
 
 namespace WebApi.Controllers;
@@ -15,10 +16,11 @@ public class BookController:ControllerBase
     }
 
     [HttpGet]
-    public List<Book> GetBooks()
+    public IActionResult GetBooks()
     {
-        var bookList = _context.Books.OrderBy(bookList => bookList.Id).ToList<Book>();
-        return bookList;
+        GetBooksQuery query = new GetBooksQuery(_context);
+        var result = query.Handle();
+        return Ok(result);
     }
     
     [HttpGet("{id}")]

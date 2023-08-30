@@ -22,6 +22,7 @@ public class GetBooksQuery
             {
                 Title = book.Title,
                 Genre = ((GenreEnum)book.GenreId).ToString(),
+                PageCount = book.PageCount,
                 PublishDate = book.PublishDate.Date.ToString("dd/MM/yyyy")
             });
         }
