@@ -33,13 +33,7 @@ public class BookController:ControllerBase
     [HttpPost]
     public IActionResult AddBook([FromBody] Book newBook)
     {
-        var book = _context.Books.SingleOrDefault(book => book.Title == newBook.Title);
-        if (book is not null)
-        {
-            return BadRequest();
-        }
-        _context.Books.Add(newBook);
-        _context.SaveChanges();
+        
         return Ok();
     }
 
