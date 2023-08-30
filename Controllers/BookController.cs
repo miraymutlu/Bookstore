@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApi.BookOperations.CreateBook;
 using WebApi.BookOperations.GetBooks;
+using WebApi.BookOperations.GetById;
 using WebApi.DBOperations;
 
 namespace WebApi.Controllers;
@@ -25,9 +26,20 @@ public class BookController:ControllerBase
     }
     
     [HttpGet("{id}")]
-    public Book GetById(int id)
+    public IActionResult GetById(int id)
     {
-        return book;
+        GetByIdQuery.BookByIdViewModel result;
+        try
+        {
+            GetByIdQuery query = new GetByIdQuery(_context);
+            query.BookID = id;
+            result = query.Handle();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+        return Ok(result);
     }
 
     [HttpPost]
