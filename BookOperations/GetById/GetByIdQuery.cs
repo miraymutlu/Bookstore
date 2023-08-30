@@ -1,3 +1,5 @@
+using AutoMapper;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using WebApi.BookOperations.GetBooks;
 using WebApi.Common;
 using WebApi.DBOperations;
@@ -7,11 +9,13 @@ namespace WebApi.BookOperations.GetById;
 public class GetByIdQuery
 {
     private readonly BookstoreDbContext _dbContext;
+    private readonly IMapper _mapper;
     public int BookID { get; set; }
 
-    public GetByIdQuery(BookstoreDbContext dbContext)
+    public GetByIdQuery(BookstoreDbContext dbContext, IMapper mapper)
     {
         _dbContext = dbContext;
+        _mapper = mapper;
     }
 
     public BookByIdViewModel Handle()
@@ -21,11 +25,12 @@ public class GetByIdQuery
         {
             throw new InvalidOperationException("The book does not exists.");
         }
-        BookByIdViewModel vm = new BookByIdViewModel();
-        vm.Title = book.Title;
-        vm.PublishDate = book.PublishDate.Date.ToString("dd/MM/yyyy");
-        vm.PageCount = book.PageCount;
-        vm.Genre = ((GenreEnum)book.GenreId).ToString();
+
+        BookByIdViewModel vm = _mapper.Map<BookByIdViewModel>(book);//new BookByIdViewModel();
+        //vm.Title = book.Title;
+        //vm.PublishDate = book.PublishDate.Date.ToString("dd/MM/yyyy");
+        //vm.PageCount = book.PageCount;
+        //vm.Genre = ((GenreEnum)book.GenreId).ToString();
         return vm;
     } 
     public class BookByIdViewModel

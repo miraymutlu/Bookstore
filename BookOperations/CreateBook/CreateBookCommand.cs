@@ -1,3 +1,4 @@
+using AutoMapper;
 using WebApi.DBOperations;
 
 namespace WebApi.BookOperations.CreateBook;
@@ -7,10 +8,12 @@ public class CreateBookCommand
     public CreateBookModel Model { get; set; }
 
     private readonly BookstoreDbContext _dbContext;
+    private readonly IMapper _mapper;
 
-    public CreateBookCommand(BookstoreDbContext dbContext)
+    public CreateBookCommand(BookstoreDbContext dbContext, IMapper mapper)
     {
         _dbContext = dbContext;
+        _mapper = mapper;
     }
 
     public void Handle()
@@ -21,11 +24,11 @@ public class CreateBookCommand
             throw new InvalidOperationException("The book is already exists.");
         }
 
-        book = new Book();
-        book.Title = Model.Title;
-        book.PageCount = Model.PageCount;
-        book.PublishDate = Model.PublishDate;
-        book.GenreId = Model.GenreId;
+        book = _mapper.Map<Book>(Model);//new Book();
+        //book.Title = Model.Title;
+        //book.PageCount = Model.PageCount;
+        //book.PublishDate = Model.PublishDate;
+        //book.GenreId = Model.GenreId;
         
         _dbContext.Books.Add(book);
         _dbContext.SaveChanges();

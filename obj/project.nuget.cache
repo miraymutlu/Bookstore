@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8XzBkR7wMNcVv1yKrJvsQM3qJm0b4A6h1ek8lWC3VSrJ03yoCbNxBh8PDarEUwo+GXfggteuTxQmO/2HwJVr3A==",
+  "dgSpecHash": "ESXEHLws8mIAlmiU1DojZ7Eb03qV0+2c7yCJMrBcuSeBm2BlgnVd6SucZcuF9hcEdT2EzicrQdlpO2PsYzRtRg==",
   "success": true,
   "projectFilePath": "/Users/miraymutlu/Desktop/repos/Bookstore/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
+    "/Users/miraymutlu/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/miraymutlu/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/Users/miraymutlu/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/miraymutlu/.nuget/packages/microsoft.entityframeworkcore/7.0.10/microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "/Users/miraymutlu/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.10/microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
     "/Users/miraymutlu/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.10/microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
