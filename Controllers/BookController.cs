@@ -61,18 +61,7 @@ public class BookController:ControllerBase
     [HttpPut("{id}")]
     public IActionResult UpdateBook(int id, [FromBody] Book updatedBook)
     {
-        var book = _context.Books.SingleOrDefault(book => book.Id == id);
-        if (book is null)
-        {
-            return BadRequest();
-        }
-
-        book.Title = updatedBook.Title != default ? updatedBook.Title : book.Title;
-        book.GenreId = updatedBook.GenreId != default ? updatedBook.GenreId : book.GenreId;
-        book.PageCount = updatedBook.PageCount != default ? updatedBook.PageCount : book.PageCount;
-        book.PublishDate = updatedBook.PublishDate != default ? updatedBook.PublishDate : book.PublishDate;
-
-        _context.SaveChanges();
+        
         
         return Ok();
     }
