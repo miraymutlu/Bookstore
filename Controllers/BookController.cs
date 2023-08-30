@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using WebApi.BookOperations.CreateBook;
 using WebApi.BookOperations.GetBooks;
 using WebApi.DBOperations;
 
@@ -31,9 +32,18 @@ public class BookController:ControllerBase
     }
 
     [HttpPost]
-    public IActionResult AddBook([FromBody] Book newBook)
+    public IActionResult AddBook([FromBody] CreateBookCommand.CreateBookModel newBook)
     {
-        
+        CreateBookCommand command = new CreateBookCommand(_context);
+        try
+        {
+            command.Model = newBook;
+            command.Handle();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
         return Ok();
     }
 
