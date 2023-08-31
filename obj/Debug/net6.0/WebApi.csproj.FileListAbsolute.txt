@@ -38,3 +38,4 @@
 /Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
 /Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/AutoMapper.dll
 /Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/miraymutlu/Desktop/repos/Bookstore/WebApi/bin/Debug/net6.0/FluentValidation.dll
