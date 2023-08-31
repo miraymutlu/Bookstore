@@ -39,6 +39,8 @@ public class BookController:ControllerBase
         {
             GetByIdQuery query = new GetByIdQuery(_context,_mapper);
             query.BookID = id;
+            GetByIdQueryValidator validator = new GetByIdQueryValidator();
+            validator.ValidateAndThrow(query);
             result = query.Handle();
         }
         catch (Exception e)
