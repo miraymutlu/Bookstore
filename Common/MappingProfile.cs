@@ -14,9 +14,9 @@ public class MappingProfile : Profile
     {
         CreateMap<CreateBookCommand.CreateBookModel, Book>();
         CreateMap<Book, GetByIdQuery.BookByIdViewModel>().ForMember(dest => dest.Genre,
-            opt => opt.MapFrom(src => ((GenreEnum)src.GenreId).ToString()));
+            opt => opt.MapFrom(src => src.Genre.Name));
         CreateMap<Book, GetBooksQuery.BookViewModel>().ForMember(dest => dest.Genre,
-            opt => opt.MapFrom(src => ((GenreEnum)src.GenreId).ToString()));
+            opt => opt.MapFrom(src => src.Genre.Name));
         CreateMap<Genre, GetGenresQuery.GenresViewModel>();
         CreateMap<Genre, GetGenresByIdQuery.GenresByIdViewModel>();
     }
