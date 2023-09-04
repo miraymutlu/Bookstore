@@ -1,4 +1,5 @@
 using AutoMapper;
+using WebApi.Application.GenreOperations.Queries.GetGenres;
 using WebApi.BookOperations.CreateBook;
 using WebApi.BookOperations.GetBooks;
 using WebApi.BookOperations.GetById;
@@ -15,5 +16,6 @@ public class MappingProfile : Profile
             opt => opt.MapFrom(src => ((GenreEnum)src.GenreId).ToString()));
         CreateMap<Book, GetBooksQuery.BookViewModel>().ForMember(dest => dest.Genre,
             opt => opt.MapFrom(src => ((GenreEnum)src.GenreId).ToString()));
+        CreateMap<Genre, GetGenresQuery.GenresViewModel>();
     }
 }
