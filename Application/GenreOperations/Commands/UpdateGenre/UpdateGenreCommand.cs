@@ -28,7 +28,7 @@ public class UpdateGenreCommand
             throw new InvalidOperationException("A book genre with the same name already exists");
         }
 
-        genre.Name = Model.Name.Trim() == default ? Model.Name : genre.Name;
+        genre.Name = string.IsNullOrEmpty(Model.Name.Trim()) ? genre.Name : Model.Name;
         genre.IsActive = Model.IsActive;
         _context.SaveChanges();
     }
