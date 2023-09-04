@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using WebApi.BookOperations.GetBooks;
 using WebApi.Common;
@@ -20,7 +21,7 @@ public class GetByIdQuery
 
     public BookByIdViewModel Handle()
     {
-        var book = _dbContext.Books.Where(book=>book.Id==BookID).SingleOrDefault();
+        var book = _dbContext.Books.Include(x => x.Genre).Where(book=>book.Id==BookID).SingleOrDefault();
         if (book is null)
         {
             throw new InvalidOperationException("The book does not exists.");
