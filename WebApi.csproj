@@ -26,6 +26,12 @@
 
 
 
+  <ItemGroup>
+    <Folder Include="Application\BookOperations\Commands\" />
+    <Folder Include="Application\BookOperations\Queries\" />
+    <Folder Include="Application\GenreOperations\Commands\" />
+  </ItemGroup>
+
   </ItemGroup>
 
 
