@@ -15,25 +15,4 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="Controllers\WeatherForecastController.cs" />
-    <Compile Remove="WeatherForecast.cs" />
-
-
-
-
-
-
-
-  <ItemGroup>
-    <Folder Include="Application\BookOperations\Commands\" />
-    <Folder Include="Application\BookOperations\Queries\" />
-  </ItemGroup>
-
-  </ItemGroup>
-
-
-
-
 </Project>
