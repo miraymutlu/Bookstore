@@ -1,5 +1,7 @@
 using AutoMapper;
 using WebApi.Application.AuthorOperations.Commands.CreateAuthorCommand;
+using WebApi.Application.AuthorOperations.Queries;
+using WebApi.Application.AuthorOperations.Queries.GetAuthorsById;
 using WebApi.Application.GenreOperations.Queries.GetGenres;
 using WebApi.Application.GenreOperations.Queries.GetGenresById;
 using WebApi.BookOperations.GetBooks;
@@ -21,5 +23,7 @@ public class MappingProfile : Profile
         CreateMap<Genre, GetGenresQuery.GenresViewModel>();
         CreateMap<Genre, GetGenresByIdQuery.GenresByIdViewModel>();
         CreateMap<CreateAuthorViewModel, Author>();
+        CreateMap<Author, AuthorsViewModel>();
+        CreateMap<Author, GetAuthorsByIdViewModel>();
     }
 }
