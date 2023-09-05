@@ -8,15 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5f45c67-a83f-40c7-a806-8ef01e521710" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Common/GenreEnum.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/WebApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/WebApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/WebApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/WebApi.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/WebApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/WebApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/WebApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/WebApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/AuthorOperations/Commands/CreateAuthor/CreateAuthorCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApi.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApi.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/MappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBOperations/BookstoreDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DBOperations/BookstoreDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +32,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2Uw1HrEyXojyjnVM1QwJPMGMMdl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -89,6 +88,7 @@
       <updated>1693835743850</updated>
       <workItem from="1693835745044" duration="283000" />
       <workItem from="1693836399157" duration="1177000" />
+      <workItem from="1693912658015" duration="1059000" />
     </task>
     <servers />
   </component>
