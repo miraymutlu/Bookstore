@@ -1,5 +1,5 @@
 using AutoMapper;
-using WebApi.Application.AuthorOperations.Commands.CreateBook;
+using WebApi.Application.AuthorOperations.Commands.CreateAuthorCommand;
 using WebApi.Application.GenreOperations.Queries.GetGenres;
 using WebApi.Application.GenreOperations.Queries.GetGenresById;
 using WebApi.BookOperations.GetBooks;

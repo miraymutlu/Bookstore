@@ -2,15 +2,15 @@ using AutoMapper;
 using WebApi.DBOperations;
 using WebApi.Entities;
 
-namespace WebApi.Application.AuthorOperations.Commands.CreateBook;
+namespace WebApi.Application.AuthorOperations.Commands.CreateAuthorCommand;
 
-public class CreateBookCommand
+public class CreateAuthorCommand
 {
     public CreateAuthorViewModel Model { get; set; }
     private readonly BookstoreDbContext _context;
     private readonly IMapper _mapper;
 
-    public CreateBookCommand(BookstoreDbContext context, IMapper mapper)
+    public CreateAuthorCommand(BookstoreDbContext context, IMapper mapper)
     {
         _context = context;
         _mapper = mapper;

@@ -7,13 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5f45c67-a83f-40c7-a806-8ef01e521710" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Application/AuthorOperations/Commands/CreateAuthor/CreateAuthorCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApi.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApi.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/MappingProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBOperations/BookstoreDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DBOperations/BookstoreDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="e5f45c67-a83f-40c7-a806-8ef01e521710" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/miraymutlu/Desktop/repos/Bookstore/WebApi/DBOperations/BookstoreDbContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -88,7 +85,7 @@
       <updated>1693835743850</updated>
       <workItem from="1693835745044" duration="283000" />
       <workItem from="1693836399157" duration="1177000" />
-      <workItem from="1693912658015" duration="1059000" />
+      <workItem from="1693912658015" duration="1522000" />
     </task>
     <servers />
   </component>
