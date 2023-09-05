@@ -52,6 +52,25 @@ public class DataGenerator
                     PageCount = 540,
                     PublishDate = new DateTime(2001, 12, 21)
                 });
+            context.Authors.AddRange(
+                new Author
+                {
+                    Name = "George",
+                    Surname = "Saunders",
+                    Birthday = new DateTime(1970,01,06)
+                },
+                new Author
+                {
+                    Name = "Jean Louis",
+                    Surname = "Fourniere",
+                    Birthday = new DateTime(1938,12,16)
+                },
+                new Author
+                {
+                    Name = "Haruki",
+                    Surname = "Murakami",
+                    Birthday = new DateTime(1956,06,24)
+                });
             context.SaveChanges();
         }
     }
